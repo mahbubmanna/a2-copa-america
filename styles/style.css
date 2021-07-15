@@ -354,6 +354,7 @@ footer p{
     #states{
         font-size: 20px;
         margin-right: 66px;
+        margin-bottom: 100px;
         padding: 0;
         width: 100%;
     }
@@ -361,8 +362,9 @@ footer p{
     transform: scale(1);
     }
     #latest{
-        margin-top: 50px;
+        margin-top: 100px;
     }
+
     #latest iframe{
         width: 100%;
     }
