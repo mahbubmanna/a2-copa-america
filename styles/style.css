@@ -176,6 +176,9 @@ nav a{
     width: 470px;
     height: 310px;
 }
+table {
+    border-spacing: 15px;
+  }
 #states:hover {
     transform: scale(1.3);
     transition: transform 0.5s ease-in-out;
