@@ -1,0 +1,384 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/*---------------------------
+ common styles or utilities 
+ ------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 1440px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+h1{
+    font-size: 64px;
+    margin: 0;
+    padding:0;
+    line-height: 80px;
+}
+
+h2{
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0;
+    padding:0;
+}
+h3{
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
+    padding:0;
+}
+p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6C6C6C;
+    text-align: justify;
+}
+.watch-button{
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+
+.watch-button span{
+    margin-right: 8px;
+}
+
+/*------------------------------
+----- top section styles ------
+--------------------------- */
+#top-section{
+    margin: 0;
+    padding: 0px 123px 0px 156px;
+    height: 677px;
+    background-color: #2D25A0;
+    color: #FFFFFF;
+}
+/* navigation bar styles */
+nav{
+    margin:0;
+    padding-top:42px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu{
+    padding: 10px 0px;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+#menu-icon{
+    display: none;
+}
+#login{
+    margin:0;
+    padding:0;
+}
+nav a{
+    padding-right: 36px;
+}
+
+#login-button{
+    width: 123px;
+    height: 44px;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+}
+#login-button span{
+    margin-left: 8px;
+}
+
+/* Introduction Page title and title image styles */
+#intro{
+    display: flex;
+    margin:0;
+    padding:0;
+}
+
+#intro-text{
+    margin:0;
+    padding:0;
+}
+#intro-text:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease-in-out;
+}
+#heading-container{
+    margin-top: 121px;
+    width: 485px;
+    height: 230px;
+}
+#button-container{
+    margin-top: 27px;
+}
+#banner-container{
+    margin: 49px 0 0 102px;
+    padding:0;
+}
+#banner-image{
+    width: 556px;
+    height: 438px;
+}
+
+
+/*------------------------------
+ ---- main section styles ----- 
+ -----------------------------*/
+ 
+ /* players style */
+#players{
+    margin: 70px 210px 70px 180px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    position: relative;
+}
+.player{
+    width: 300px;
+    height: 474px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player:hover{
+    display: block;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+.player img{
+    margin-bottom: 16px;
+}
+
+ /*Highlights Style */
+.highlights{
+    margin: 165px 156px 158px 182px;
+    display: flex;
+}
+#hi-text{
+    margin: 60px 66px 0 0;
+    padding: 0;
+    width: 470px;
+    height: 310px;
+}
+/* bonus Styles */
+
+#states{
+    font-size: 20px;
+    margin-right: 66px;
+    padding: 0;
+    width: 470px;
+    height: 310px;
+}
+#states:hover {
+    transform: scale(1.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/*------------------------------
+ -------- foooter styles -------
+ -----------------------------*/
+footer{
+    margin: 0px 481px 63px 475px;
+    display: flex;
+    flex-direction: column;
+ }
+#logo{
+    padding-left:20px;
+    width: 480px;
+    height: 110px;
+}
+#social{
+    margin: 20px 157px;
+    width: 172px;
+    height: 32px;
+    display: flex;
+}
+.sites{
+    width: 32px;
+    height: 32px;
+    margin-right: 14px;
+    background-color:#0b0d1711;
+    border-radius: 50%;
+    text-align: center;
+}
+.sites a{
+    display: block;
+    padding: 5px;
+    color: #969BAB;
+}
+footer p{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------------------------
+ --------- Media Queries ------- 
+ -----------------------------*/
+
+ /* for mobile devices */
+
+@media only screen and (max-width:688px){
+
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        font-size: 36px;
+        margin: 0;
+        padding:0;
+        line-height: 50px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0;
+        padding:0;
+    }
+    /* top section for mobile */
+    #top-section{
+        margin: 0;
+        padding: 0px 16px;
+        height: 740px;
+        background-color: #2D25A0;
+        color: #FFFFFF;
+    }
+    #menu-icon{
+        display:unset;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu{
+        display: none;
+        padding: 10px 0px;
+        margin:0;
+        padding:0;
+    }
+    #login{
+        margin:0;
+        padding:0;
+    }
+    #login-button{
+        width: 48px;
+        height: 32px;
+        padding: 7px 10px;
+        background-color: #E02C6D;
+        font-size: 11;
+    }
+    #login-button span{
+        margin-left: 6px;
+    }
+    #intro{
+        margin:0;
+        padding:0;
+        display: flex;
+        flex-direction: column;
+    }
+    #intro-text{
+        margin:0;
+        padding:0;
+    }
+    #intro-text:hover {
+        transform:translate(40px) scale(1.3);
+        transition: transform 0.5s ease-in-out;
+    }
+    #heading-container{
+        width: 278px;
+        height: 138px;
+    }
+    #button-container{
+        margin-top: 30px;
+    }
+    #banner-container{
+        margin: 49px 0;
+        padding:0;
+    }
+    #banner-image{
+        width: 96%;
+        height: 90%
+    }
+    /* players section for mobile */
+    #players{
+        margin: 42px 15px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px;
+        position: relative;
+    }
+    .player{
+        width:300px;
+        height: 474px;
+        padding: 15px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
+    .player:hover{
+        display: block;
+        transform: scale(1);
+    }
+    .player img{
+        margin-bottom: 16px;
+    }
+    /*Highlights Section for mobile */
+    .highlights{
+        margin: 60px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    #hi-text{
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+    #hi-image img{
+        width: 100%;
+    }
+    /* bonus Styles for mobile */
+    #states{
+        font-size: 20px;
+        margin-right: 66px;
+        padding: 0;
+        width: 100%;
+    }
+    #states:hover {
+    transform: scale(1);
+    }
+    #latest{
+        margin-top: 50px;
+    }
+    #latest iframe{
+        width: 100%;
+    }
+    /* footer for mobile  */
+    footer{
+        margin: 0 18px 180px 18px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    #logo{
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    #social{
+        margin:0;
+        padding-left:30%;
+        display: flex;
+    }
+
+}
